@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="postCell" rowHeight="250" id="pCy-bd-mUr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="postCell" rowHeight="250" id="pCy-bd-mUr" customClass="PostTableViewCell" customModule="Product_Hunt_API" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pCy-bd-mUr" id="lj7-9y-xe6">
@@ -32,9 +32,12 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQE-5m-NuS">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="249.66666666666666"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="f5S-v7-HCb">
-                                                            <rect key="frame" x="8" y="30" width="359" height="187.66666666666666"/>
-                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHI-w9-UTY">
+                                                            <rect key="frame" x="5" y="9.9999999999999982" width="45" height="20.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="k03-67-waE">
                                                             <rect key="frame" x="239.66666666666663" y="10" width="130.33333333333337" height="14.333333333333336"/>
                                                             <subviews>
@@ -52,12 +55,9 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHI-w9-UTY">
-                                                            <rect key="frame" x="5" y="9.9999999999999982" width="45" height="20.333333333333329"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="f5S-v7-HCb">
+                                                            <rect key="frame" x="8" y="30" width="359" height="187.66666666666666"/>
+                                                        </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tagline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5I-2z-wLb">
                                                             <rect key="frame" x="5" y="225.33333333333334" width="40.333333333333336" height="14.333333333333343"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -89,6 +89,13 @@
                                                 <constraint firstAttribute="trailing" secondItem="YQE-5m-NuS" secondAttribute="trailing" id="wgg-cp-NdH"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="lXb-HL-ELT" id="ILx-j9-9yD"/>
+                                            <outlet property="nameLabel" destination="SHI-w9-UTY" id="jNY-qM-P0V"/>
+                                            <outlet property="productView" destination="f5S-v7-HCb" id="fZj-mh-Xp3"/>
+                                            <outlet property="taglineLabel" destination="m5I-2z-wLb" id="O4y-mZ-ylq"/>
+                                            <outlet property="voteLabel" destination="Wbs-cF-edV" id="PeJ-iW-LEx"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

@@ -16,6 +16,7 @@
 		28972CE72200D4D300A557EC /* Product_Hunt_APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28972CE62200D4D300A557EC /* Product_Hunt_APITests.swift */; };
 		28972CF22200D4D300A557EC /* Product_Hunt_APIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28972CF12200D4D300A557EC /* Product_Hunt_APIUITests.swift */; };
 		28972D002200D90E00A557EC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28972CFF2200D90E00A557EC /* Post.swift */; };
+		28972D052200E15E00A557EC /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28972D042200E15E00A557EC /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		28972CF12200D4D300A557EC /* Product_Hunt_APIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product_Hunt_APIUITests.swift; sourceTree = "<group>"; };
 		28972CF32200D4D300A557EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28972CFF2200D90E00A557EC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		28972D042200E15E00A557EC /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				28972CD22200D4D200A557EC /* Main.storyboard */,
+				28972D042200E15E00A557EC /* PostTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			files = (
 				28972CD12200D4D200A557EC /* FeedViewController.swift in Sources */,
 				28972CD72200D4D200A557EC /* Product_Hunt_API.xcdatamodeld in Sources */,
+				28972D052200E15E00A557EC /* PostTableViewCell.swift in Sources */,
 				28972CCF2200D4D200A557EC /* AppDelegate.swift in Sources */,
 				28972D002200D90E00A557EC /* Post.swift in Sources */,
 			);
