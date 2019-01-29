@@ -17,6 +17,7 @@
 		28972CF22200D4D300A557EC /* Product_Hunt_APIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28972CF12200D4D300A557EC /* Product_Hunt_APIUITests.swift */; };
 		28972D002200D90E00A557EC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28972CFF2200D90E00A557EC /* Post.swift */; };
 		28972D052200E15E00A557EC /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28972D042200E15E00A557EC /* PostTableViewCell.swift */; };
+		28A95CFF2201149500EC0AEB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A95CFE2201149500EC0AEB /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		28972CF32200D4D300A557EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28972CFF2200D90E00A557EC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		28972D042200E15E00A557EC /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		28A95CFE2201149500EC0AEB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		28972CCD2200D4D200A557EC /* Product Hunt API */ = {
 			isa = PBXGroup;
 			children = (
+				28A95CFD2201147700EC0AEB /* Networking */,
 				28972D012200D97B00A557EC /* Model */,
 				28972D022200D98200A557EC /* View */,
 				28972D032200D98700A557EC /* Controller */,
@@ -156,6 +159,14 @@
 				28972CD02200D4D200A557EC /* FeedViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		28A95CFD2201147700EC0AEB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				28A95CFE2201149500EC0AEB /* NetworkManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A95CFF2201149500EC0AEB /* NetworkManager.swift in Sources */,
 				28972CD12200D4D200A557EC /* FeedViewController.swift in Sources */,
 				28972CD72200D4D200A557EC /* Product_Hunt_API.xcdatamodeld in Sources */,
 				28972D052200E15E00A557EC /* PostTableViewCell.swift in Sources */,
