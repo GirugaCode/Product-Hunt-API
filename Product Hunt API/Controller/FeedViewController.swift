@@ -12,6 +12,14 @@ class FeedViewController: UIViewController {
     
     @IBOutlet weak var feedTableView: UITableView!
     
+    var mockData: [Post] = {
+        var meTube = Post(id: 0, name: "MeTube", tagline: "Stream videos for free!", votesCount: 25, commentsCount: 4)
+        var boogle = Post(id: 1, name: "Boogle", tagline: "Search anything!", votesCount: 1000, commentsCount: 50)
+        var meTunes = Post(id: 2, name: "meTunes", tagline: "Listen to any song!", votesCount: 25000, commentsCount: 590)
+        
+        return [meTube, boogle, meTunes]
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,15 +33,21 @@ class FeedViewController: UIViewController {
 // MARK: UITableViewDataSource
 extension FeedViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return mockData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
+        let post = mockData[indexPath.row]
+        cell.post = post
+        
+        return cell
     }
 }
 
 // MARK: UITableViewDelegate
 extension FeedViewController: UITableViewDelegate {
-    // Code
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 250
+    }
 }
