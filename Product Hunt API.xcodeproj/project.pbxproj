@@ -15,6 +15,7 @@
 		28972CDC2200D4D300A557EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28972CDA2200D4D300A557EC /* LaunchScreen.storyboard */; };
 		28972CE72200D4D300A557EC /* Product_Hunt_APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28972CE62200D4D300A557EC /* Product_Hunt_APITests.swift */; };
 		28972CF22200D4D300A557EC /* Product_Hunt_APIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28972CF12200D4D300A557EC /* Product_Hunt_APIUITests.swift */; };
+		28972D002200D90E00A557EC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28972CFF2200D90E00A557EC /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		28972CED2200D4D300A557EC /* Product Hunt APIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Product Hunt APIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28972CF12200D4D300A557EC /* Product_Hunt_APIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product_Hunt_APIUITests.swift; sourceTree = "<group>"; };
 		28972CF32200D4D300A557EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28972CFF2200D90E00A557EC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +101,13 @@
 		28972CCD2200D4D200A557EC /* Product Hunt API */ = {
 			isa = PBXGroup;
 			children = (
+				28972D012200D97B00A557EC /* Model */,
+				28972D022200D98200A557EC /* View */,
+				28972D032200D98700A557EC /* Controller */,
 				28972CCE2200D4D200A557EC /* AppDelegate.swift */,
-				28972CD02200D4D200A557EC /* FeedViewController.swift */,
-				28972CD22200D4D200A557EC /* Main.storyboard */,
 				28972CD82200D4D300A557EC /* Assets.xcassets */,
-				28972CDA2200D4D300A557EC /* LaunchScreen.storyboard */,
 				28972CDD2200D4D300A557EC /* Info.plist */,
+				28972CDA2200D4D300A557EC /* LaunchScreen.storyboard */,
 				28972CD52200D4D200A557EC /* Product_Hunt_API.xcdatamodeld */,
 			);
 			path = "Product Hunt API";
@@ -126,6 +129,30 @@
 				28972CF32200D4D300A557EC /* Info.plist */,
 			);
 			path = "Product Hunt APIUITests";
+			sourceTree = "<group>";
+		};
+		28972D012200D97B00A557EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28972CFF2200D90E00A557EC /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28972D022200D98200A557EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				28972CD22200D4D200A557EC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28972D032200D98700A557EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				28972CD02200D4D200A557EC /* FeedViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +289,7 @@
 				28972CD12200D4D200A557EC /* FeedViewController.swift in Sources */,
 				28972CD72200D4D200A557EC /* Product_Hunt_API.xcdatamodeld in Sources */,
 				28972CCF2200D4D200A557EC /* AppDelegate.swift in Sources */,
+				28972D002200D90E00A557EC /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
