@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		28972CCF2200D4D200A557EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28972CCE2200D4D200A557EC /* AppDelegate.swift */; };
-		28972CD12200D4D200A557EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28972CD02200D4D200A557EC /* ViewController.swift */; };
+		28972CD12200D4D200A557EC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28972CD02200D4D200A557EC /* FeedViewController.swift */; };
 		28972CD42200D4D200A557EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28972CD22200D4D200A557EC /* Main.storyboard */; };
 		28972CD72200D4D200A557EC /* Product_Hunt_API.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28972CD52200D4D200A557EC /* Product_Hunt_API.xcdatamodeld */; };
 		28972CD92200D4D300A557EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28972CD82200D4D300A557EC /* Assets.xcassets */; };
@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		28972CCB2200D4D200A557EC /* Product Hunt API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Product Hunt API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28972CCE2200D4D200A557EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28972CD02200D4D200A557EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28972CD02200D4D200A557EC /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		28972CD32200D4D200A557EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28972CD62200D4D200A557EC /* Product_Hunt_API.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Product_Hunt_API.xcdatamodel; sourceTree = "<group>"; };
 		28972CD82200D4D300A557EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				28972CCE2200D4D200A557EC /* AppDelegate.swift */,
-				28972CD02200D4D200A557EC /* ViewController.swift */,
+				28972CD02200D4D200A557EC /* FeedViewController.swift */,
 				28972CD22200D4D200A557EC /* Main.storyboard */,
 				28972CD82200D4D300A557EC /* Assets.xcassets */,
 				28972CDA2200D4D300A557EC /* LaunchScreen.storyboard */,
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28972CD12200D4D200A557EC /* ViewController.swift in Sources */,
+				28972CD12200D4D200A557EC /* FeedViewController.swift in Sources */,
 				28972CD72200D4D200A557EC /* Product_Hunt_API.xcdatamodeld in Sources */,
 				28972CCF2200D4D200A557EC /* AppDelegate.swift in Sources */,
 			);
