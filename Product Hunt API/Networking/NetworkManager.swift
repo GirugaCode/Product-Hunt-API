@@ -3,7 +3,7 @@ import UIKit
 class NetworkManager {
     let urlSession = URLSession.shared
     var baseURL = "https://api.producthunt.com/v1/"
-    var token = "4859b2f102485a26ea57bc56b0941af5e4eead82cfbe83e80f671906166312da"
+    var token = "f22d80fa5b3972fdf6ace8c39c4ba19f59b55f3c76a334e1c862ca02bb08226c"
     
     func getPosts(completion: @escaping ([Post]) -> Void) {
         // Construct the URL to get posts from API.
