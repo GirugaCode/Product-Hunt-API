@@ -18,6 +18,8 @@
 		28972D002200D90E00A557EC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28972CFF2200D90E00A557EC /* Post.swift */; };
 		28972D052200E15E00A557EC /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28972D042200E15E00A557EC /* PostTableViewCell.swift */; };
 		28A95CFF2201149500EC0AEB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A95CFE2201149500EC0AEB /* NetworkManager.swift */; };
+		28D4CEDE22039EE3003DC54D /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4CEDD22039EE3003DC54D /* CommentsViewController.swift */; };
+		28D4CEE02203A2EF003DC54D /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4CEDF2203A2EF003DC54D /* CommentTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		28972CFF2200D90E00A557EC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		28972D042200E15E00A557EC /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		28A95CFE2201149500EC0AEB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		28D4CEDD22039EE3003DC54D /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		28D4CEDF2203A2EF003DC54D /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 			children = (
 				28972CD22200D4D200A557EC /* Main.storyboard */,
 				28972D042200E15E00A557EC /* PostTableViewCell.swift */,
+				28D4CEDF2203A2EF003DC54D /* CommentTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				28972CD02200D4D200A557EC /* FeedViewController.swift */,
+				28D4CEDD22039EE3003DC54D /* CommentsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -302,6 +308,8 @@
 			files = (
 				28A95CFF2201149500EC0AEB /* NetworkManager.swift in Sources */,
 				28972CD12200D4D200A557EC /* FeedViewController.swift in Sources */,
+				28D4CEDE22039EE3003DC54D /* CommentsViewController.swift in Sources */,
+				28D4CEE02203A2EF003DC54D /* CommentTableViewCell.swift in Sources */,
 				28972CD72200D4D200A557EC /* Product_Hunt_API.xcdatamodeld in Sources */,
 				28972D052200E15E00A557EC /* PostTableViewCell.swift in Sources */,
 				28972CCF2200D4D200A557EC /* AppDelegate.swift in Sources */,
