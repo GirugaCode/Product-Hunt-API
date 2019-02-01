@@ -32,7 +32,12 @@ class FeedViewController: UIViewController {
     func updateFeed() {
         // Update posts list with data retrieved from a request to the API
         networkManager.getPosts() { result in
-            self.posts = result
+            switch result {
+            case let .success(posts):
+                self.posts = posts
+            case let .failure(error):
+                print(error)
+            }
         }
     }
 }
@@ -65,7 +70,7 @@ extension FeedViewController: UITableViewDelegate {
         guard let commentsView = storyboard.instantiateViewController(withIdentifier: "commentsView") as? CommentsViewController else {
             return
         }
-        commentsView.comments = ["Like if you agree", "Arrow to the knee!", "Sugoi"]
+        commentsView.postID = post.id
         navigationController?.pushViewController(commentsView, animated: true)
     }
 }

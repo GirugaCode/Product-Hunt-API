@@ -67,7 +67,7 @@ class NetworkManager {
     
     private func makeRequest(for endPoint: EndPoints) -> URLRequest {
         let stringParams = endPoint.paramsToString()
-        let path = endPoint.getParams()
+        let path = endPoint.getPath()
         let fullURL = URL(string: baseURL.appending("\(path)?\(stringParams)"))!
         var request = URLRequest(url: fullURL)
         request.httpMethod = endPoint.getHTTPMethod()
